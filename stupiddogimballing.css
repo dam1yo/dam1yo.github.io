@@ -52,8 +52,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -78,4 +76,19 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+Gallery{
+    background-color:blue; color:aliceblue
+}
+GalleryP{
+    background: greenyellow; color:rgb(0, 0, 0)
+}
+Home {
+   background-color:blue; color:aliceblue
+}
+HomeP{
+   background: greenyellow; color:rgb(0, 0, 0) 
+}
+button{
+    background-color:blue; color:aliceblue
 }
