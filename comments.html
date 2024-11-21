@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="stupiddogimballing.css">
+</head>
+<body>
+    <title>A page to leave some comments</title>
+<p>
+    <button id="Gallery" onclick= window.location.href='aboutme.html'>Gallery</button>
+    <button id="Home" onclick = window.location.href='index.html'>About Me</button>
+    <button id="CommentsP">>COMMENTS<</button>
+    <br><br>
+    <h1>Feel free to talk all the trash here <br>(it gets sent to hell itself, i dont have a database yet lol)</h1>
+    <br>
+    <label class="center">Comment here:<textarea name="" id="new-comment" cols="60" rows="5" class="center"></textarea></label>
+    <br>
+    <button id="btn-post" class="center">Post</button>
+    <script>
+        document.getElementById("btn-post").addEventListener("click", function(){
+            const newComment = document.getElementById("new-comment").value;
+            const commentContainer = document.getElementById("comment-container");
+            const commentElement = document.createElement("p");
+            commentElement.innerText = newComment;
+            commentContainer.appendChild(commentElement);
+            document.getElementById("new-comment").value = "";
+
+        });
+    </script>
+    <br>
+    <div id="comment-container" class="center"></div>
+    <br>
+
+</p>
+</body>
+</html>
