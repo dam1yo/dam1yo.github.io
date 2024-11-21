@@ -2,13 +2,15 @@
 <html lang="en">
 <head>   
     <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script><link rel="stylesheet" href="stupiddogimballing.css"></head>
-
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="stupiddogimballing.css">
+</head>
 <body>
 <p id="base">
     <button style="background: greenyellow; color:rgb(0, 0, 0)">>GALLERY<</button>
     <button style="background-color:blue; color:aliceblue" onclick = window.location.href='index.html'>About Me</button>
-    <h1>Live feed of stuff I like</h1>  
+    <h1>Live feed of stuff I like <br>
+        (As live as an AJAX-fed API can be)</h1>  
     <br>
     <div id="images"></div>
 
@@ -24,7 +26,7 @@
             .done(function( data ) {
               $.each( data.items, function( i, item ) {
                 $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-                if ( i === 10 ) {
+                if ( i === 19 ) {
                   return false;
                 }
               });
